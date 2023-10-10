@@ -12,7 +12,7 @@ The breadboard, the schematic and PCB are made with [Fritzing](https://fritzing.
 
 The Fritzing project file [EasyPicoPCB_fritzing.fzz](EasyPicoPCB_fritzing.fzz) (compressed file).
 
-The code with Thonny IDE graph viewer :
+The code with Thonny IDE and its plotter window :
 
 ```python
 # EasyPicoPCB (2023-10-09)
@@ -78,7 +78,7 @@ buttonS3.irq(trigger=machine.Pin.IRQ_RISING, handler=buttons_handler)
 # Pico Status
 ledOnboard.on()
 
-# Show graphics in Thonny Grapher with text values
+# Show graphics in Thonny plotter with text values
 while True:
     # https://mkaz.blog/code/python-string-format-cookbook/
     valueP1 = "pot1:{:.2f}".format(pot1.read_u16() * conversionFactor)
@@ -87,3 +87,5 @@ while True:
     print("Min:0", valueP1, valueP2, valueP3, "Max:3.5")
     utime.sleep(0.3)
 ```
+
+![](assets/EasyPicoPCB_thonny.png)
