@@ -1,6 +1,6 @@
 # EasyPicoPCB
 
-A simple PCB with Raspberry Pi Pico, 3 LEDs, 3 push buttons, 3 potentiometers and a MicroPython code example. :partying_face:
+A simple PCB with Raspberry Pi Pico, 3 LEDs, 3 push buttons, 3 potentiometers and a MicroPython code example.
 
 The breadboard, the schematic and PCB are made with [Fritzing](https://fritzing.org/).
 
@@ -10,7 +10,11 @@ The breadboard, the schematic and PCB are made with [Fritzing](https://fritzing.
 
 ![](assets/EasyPicoPCB_pcb.png)
 
-The Fritzing project file [EasyPicoPCB_fritzing.fzz](EasyPicoPCB_fritzing.fzz) (compressed file).
+And the final result (PCB from [AISLER](https://aisler.net/) manufacture) with all components :
+
+![](assets/EasyPicoPCB_final.png)
+
+The Fritzing project [EasyPicoPCB_fritzing.fzz](EasyPicoPCB_fritzing.fzz) is a compressed file.
 
 The code with Thonny IDE and its plotter window :
 
@@ -30,6 +34,7 @@ buttonS1 = machine.Pin(16, machine.Pin.IN, machine.Pin.PULL_DOWN)
 buttonS2 = machine.Pin(17, machine.Pin.IN, machine.Pin.PULL_DOWN)
 # External button S3 (GPIO18, pin 24)
 buttonS3 = machine.Pin(18, machine.Pin.IN, machine.Pin.PULL_DOWN)
+
 # External LED LED1 (GPIO15, pin 20)
 led1 = machine.Pin(15, machine.Pin.OUT)
 # External LED LED2 (GPIO14, pin 19)
@@ -89,3 +94,5 @@ while True:
 ```
 
 ![](assets/EasyPicoPCB_thonny.png)
+
+Happy coding & have fun ! :partying_face:
