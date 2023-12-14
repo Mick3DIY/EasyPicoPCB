@@ -8,6 +8,8 @@ The breadboard, the schematic and PCB are made with [Fritzing](https://fritzing.
 
 ![](assets/EasyPicoPCB_schem.png)
 
+⚠️ The LEDs in the shematic and the PCB are in wrong polarity in this version. Be careful when soldering them. ⚠️
+
 ![](assets/EasyPicoPCB_pcb.png)
 
 And the final result (PCB from [AISLER](https://aisler.net/) manufacture) with all components :
