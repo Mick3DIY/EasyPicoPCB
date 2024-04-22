@@ -1,26 +1,3 @@
-# EasyPicoPCB
-
-A simple PCB with Raspberry Pi Pico, 3 LEDs, 3 push buttons, 3 potentiometers and a MicroPython code example.
-
-The breadboard, the schematic and PCB are made with [Fritzing](https://fritzing.org/).
-
-![](assets/EasyPicoPCB_bb.png)
-
-![](assets/EasyPicoPCB_schem.png)
-
-⚠️ The LEDs in the shematic and the PCB are in wrong polarity in this version. Be careful when soldering them. ⚠️
-
-![](assets/EasyPicoPCB_pcb.png)
-
-And the final result (PCB from [AISLER](https://aisler.net/) manufacture) with all components :
-
-![](assets/EasyPicoPCB_final.png)
-
-The Fritzing project [EasyPicoPCB_fritzing.fzz](EasyPicoPCB_fritzing.fzz) is a compressed file.
-
-The code with Thonny IDE and its plotter window :
-
-```python
 # EasyPicoPCB (2024-04-22)
 # Raspberry Pi Pico : https://www.raspberrypi.com/products/raspberry-pi-pico/
 # Documentation, tutorials : https://projects.raspberrypi.org
@@ -105,8 +82,3 @@ while True:
     valueP3 = "pot3:{:.2f}".format(pot3.read_u16() * conversionFactor)
     print("Min:0", valueP1, valueP2, valueP3, "Max:3.5")
     utime.sleep(0.3)
-```
-
-![](assets/EasyPicoPCB_thonny.png)
-
-Happy coding & have fun ! :partying_face:
