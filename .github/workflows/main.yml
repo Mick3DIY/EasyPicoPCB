@@ -1,1 +1,12 @@
-uses: dineshsonachalam/markdown-autodocs@v1.0
+name: "Github main workflow"
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  embed-code:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: dineshsonachalam/markdown-autodocs@master
