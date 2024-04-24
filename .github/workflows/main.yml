@@ -10,4 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Markdown autodocs
-        uses: dineshsonachalam/markdown-autodocs@master
+        uses: dineshsonachalam/markdown-autodocs@v1.0.7
+        with:
+            output_file_paths: '[./README.md]'
+            categories: '[code-block]'
