@@ -81,4 +81,4 @@ while True:
     valueP2 = "pot2:{:.2f}".format(pot2.read_u16() * conversionFactor)
     valueP3 = "pot3:{:.2f}".format(pot3.read_u16() * conversionFactor)
     print("Min:0", valueP1, valueP2, valueP3, "Max:3.5")
-    utime.sleep(0.3)
+    utime.sleep(0.3) #Important !

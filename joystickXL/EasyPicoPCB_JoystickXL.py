@@ -1,4 +1,4 @@
-# EasyPicoPCB code example in CircuitPython and JoystickXL (2024-02-16)
+# EasyPicoPCB code example in CircuitPython and JoystickXL (2024-04-24)
 # Original project : https://github.com/Mick3DIY/EasyPicoPCB
 # Raspberry Pi Pico : https://www.raspberrypi.com/products/raspberry-pi-pico/
 # Documentation, tutorials : https://projects.raspberrypi.org
@@ -48,12 +48,24 @@ pot3 = analogio.AnalogIn(board.GP28)
 # https://docs.circuitpython.org/en/latest/shared-bindings/analogio/index.html#analogio.AnalogIn
 conversionFactor = pot1.reference_voltage / (65535)
 
+# Blink LEDs (at startup for example)
+def blink_all_leds(all_leds):
+    for led in all_leds:
+        # Check if the object is a LED
+        if hasattr(led, "direction"):
+            led.value = True
+            time.sleep(0.1)
+            led.value = False
+
 js = Joystick()
 
 js.add_input(
     Button(buttonS1, active_low=False), Button(buttonS2, active_low=False), Button(buttonS3, active_low=False),
     Axis(pot1), Axis(pot2), Axis(pot3),
 )
+
+# Check all LEDs
+blink_all_leds((led1, led2, led3, ledOnboard))
 
 # Pico Status
 ledOnboard.value = True
