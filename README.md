@@ -106,6 +106,8 @@ while True:
     print("Min:0", valueP1, valueP2, valueP3, "Max:3.5")
     utime.sleep(0.3)
 ```
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=https://github.com/Mick3DIY/EasyPicoPCB/blob/bc52c586c299dd3a9f334f90b4afb7bb0546a06d/EasyPicoPCB.py) -->
+<!-- MARKDOWN-AUTO-DOCS:END -->
 
 ![](assets/EasyPicoPCB_thonny.png)
 
