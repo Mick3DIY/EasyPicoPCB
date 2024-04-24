@@ -1,16 +1,12 @@
 name: "GitHub main workflow"
 
-on:
-  pull_request:
-    branches:
-      - main
+on: [push]
 
 jobs:
    update-readme:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: actions/checkout@v3
+      # https://github.com/marketplace/actions/markdown-autodocs
       - name: Markdown autodocs
         uses: dineshsonachalam/markdown-autodocs@v1.0.7
         with:
