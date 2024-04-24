@@ -34,7 +34,8 @@ Then create a new file *code.py* in the Pico board with Thonny IDE with the code
 
 ![](assets/EasyPicoPCB_joystickXL_directories.png)
 
-https://github.com/Mick3DIY/EasyPicoPCB/blob/9bdf7d77696d0fcb04d4879ffee31a63a1c57967/joystickXL/EasyPicoPCB_JoystickXL.py
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=https://github.com/Mick3DIY/EasyPicoPCB/blob/9bdf7d77696d0fcb04d4879ffee31a63a1c57967/joystickXL/EasyPicoPCB_JoystickXL.py) -->
+<!-- MARKDOWN-AUTO-DOCS:END -->
 
 Finally run this code to see some values :
 
