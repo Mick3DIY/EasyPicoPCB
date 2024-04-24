@@ -1,4 +1,4 @@
-name: "Github main workflow"
+name: "GitHub main workflow"
 
 on:
   pull_request:
@@ -9,4 +9,5 @@ jobs:
   embed-code:
     runs-on: ubuntu-latest
     steps:
-      - uses: dineshsonachalam/markdown-autodocs@master
+      - name: Markdown autodocs
+        uses: dineshsonachalam/markdown-autodocs@master
