@@ -4,6 +4,8 @@ A simple PCB with Raspberry Pi Pico, 3 LEDs, 3 push buttons, 3 potentiometers an
 
 The breadboard, the schematic and PCB are made with [Fritzing](https://fritzing.org/).
 
+A newer version (with KiCad version 6) is available in the [kicad](kicad) folder.
+
 ![](assets/EasyPicoPCB_bb.png)
 
 ![](assets/EasyPicoPCB_schem.png)
